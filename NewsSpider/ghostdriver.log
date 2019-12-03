@@ -1,0 +1,81 @@
+[INFO  - 2017-09-07T02:13:18.590Z] GhostDriver - Main - running on port 5882
+[INFO  - 2017-09-07T02:13:21.996Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-09-07T02:13:21.996Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.customHeaders:  - {}
+[INFO  - 2017-09-07T02:13:21.996Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-09-07T02:13:21.996Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c
+[ERROR - 2017-09-07T02:13:58.410Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.lastElementChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:13:58.410Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - stack:
+  a (https://rec.udn.com/er.js?1504750438334:1)
+  mainProcess (https://rec.udn.com/er.js?1504750438334:1)
+  (anonymous function) (https://rec.udn.com/er.js?1504750438334:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:14:12.468Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.lastElementChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:14:12.468Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - stack:
+  a (https://rec.udn.com/er.js?1504750452376:1)
+  mainProcess (https://rec.udn.com/er.js?1504750452376:1)
+  (anonymous function) (https://rec.udn.com/er.js?1504750452376:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:14:35.502Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.lastElementChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:14:35.502Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - stack:
+  a (https://rec.udn.com/er.js?1504750475387:1)
+  mainProcess (https://rec.udn.com/er.js?1504750475387:1)
+  (anonymous function) (https://rec.udn.com/er.js?1504750475387:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:17:13.547Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - msg: ReferenceError: Can't find variable: $
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:17:13.547Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - stack:
+  (anonymous function) (https://udn.com/news/story/7266/2687368?from=udn-ch1_breaknews-1-99-news:104)
+  p (https://udn.com/news/story/7266/2687368?from=udn-ch1_breaknews-1-99-news:43)
+  n (https://udn.com/news/story/7266/2687368?from=udn-ch1_breaknews-1-99-news:43)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-09-07T02:18:18.709Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2017-09-07T02:18:26.474Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.lastElementChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:18:26.474Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - stack:
+  a (https://rec.udn.com/er.js?1504750706294:1)
+  mainProcess (https://rec.udn.com/er.js?1504750706294:1)
+  (anonymous function) (https://rec.udn.com/er.js?1504750706294:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:19:18.011Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.lastElementChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:19:18.011Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - stack:
+  a (https://rec.udn.com/er.js?1504750757864:1)
+  mainProcess (https://rec.udn.com/er.js?1504750757864:1)
+  (anonymous function) (https://rec.udn.com/er.js?1504750757864:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:21:33.276Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.lastElementChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:21:33.277Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - stack:
+  a (https://rec.udn.com/er.js?1504750893164:1)
+  mainProcess (https://rec.udn.com/er.js?1504750893164:1)
+  (anonymous function) (https://rec.udn.com/er.js?1504750893164:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:21:42.617Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.lastElementChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-09-07T02:21:42.617Z] Session [1f5d9130-9372-11e7-ba0e-1fa11ec9ed2c] - page.onError - stack:
+  a (https://rec.udn.com/er.js?1504750902485:1)
+  mainProcess (https://rec.udn.com/er.js?1504750902485:1)
+  (anonymous function) (https://rec.udn.com/er.js?1504750902485:1)
+
+  phantomjs://platform/console++.js:263 in error
+Fatal Windows exception, code 0xc0000005.
+PhantomJS has crashed. Please read the bug reporting guide at
+<http://phantomjs.org/bug-reporting.html> and file a bug report.
