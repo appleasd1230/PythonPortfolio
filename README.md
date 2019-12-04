@@ -18,4 +18,4 @@
 #### Training Word to Vector
 [gensim](https://radimrehurek.com/gensim/)
 ## OpenDataSpider
-#### Get Tawiwan Govment Open Datas
+#### Get Tawiwan Govment Openatas
