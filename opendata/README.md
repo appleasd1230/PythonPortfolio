@@ -3,7 +3,7 @@ Auto get the open datas which have been provided by Taiwan Government through py
 #### Web Spider
 
 - BeautifulSoup
-- qt -- (must lover then 5.5 `brew install qt@5.5`)
+- qt -- (must over then 5.5 `brew install qt@5.5`)
 - [dryscrape](http://dryscrape.readthedocs.io/en/latest/installation.html) -- `pip install dryscrape`
 - json
 - time
