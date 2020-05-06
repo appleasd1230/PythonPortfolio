@@ -66,10 +66,34 @@ class Crawler:
             # print(pageNext)
             self.getToday(date, pageNext, keyword, num_posts)
 
-
+"""
 board = "nCoV2019"
 crawler = Crawler(board)
 crawler.getToday(date=datetime(2019, 12, 31), num_posts=50)
+"""
+"""修改參數區"""
+# ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+board = "nCoV2019" # Ptt專版名稱
+crawler = Crawler(board) # 呼叫Class，請別動這段!
+num_posts = 50 # 要爬幾篇(一個日期幾篇)
+lst = [] # 定義新的lst，誤動!
+
+# 看你要幾個日期，就加幾個datetime進去...最後一個的後面不用逗點
+lst.append([
+    datetime(2015, 4, 5),
+    datetime(2016, 4, 5),
+    datetime(2017, 4, 5),
+    datetime(2018, 4, 5),
+    datetime(2019, 4, 5),
+    datetime(2020, 4, 5),
+    datetime(2021, 4, 5)
+    ])
+
+# 以下迴圈誤動!
+for datetime_lst in lst: # 解析lst
+    for datetime_infor in datetime_lst: # 抓出每個日期
+        crawler.getToday(date=datetime_infor, num_posts) # 日期
+# ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 # crawler.getToday(date=datetime(2020, 1, 3), num_posts=50)
 # crawler.getToday(date=datetime(2020, 1, 5), num_posts=50)
 # crawler.getToday(date=datetime(2020, 1, 6), num_posts=50)
