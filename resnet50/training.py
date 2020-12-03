@@ -21,10 +21,10 @@ import random
 """config"""
 config = configparser.ConfigParser()
 config.read('Config.ini', encoding = 'utf_8_sig')
-dropout = int(config.get('Parameters', 'dropout')) # dropout
+dropout = float(config.get('Parameters', 'dropout')) # dropout
 batch_size = int(config.get('Parameters', 'batch_size')) # batch_size
 epochs = int(config.get('Parameters', 'epochs')) # epochs
-lr = int(config.get('Parameters', 'lr')) # learning_rate
+lr = float(config.get('Parameters', 'lr')) # learning_rate
 size = int(config.get('Parameters', 'size')) # size
 label_path = config.get('Parameters', 'label_path') # label_path
 image_path = config.get('Parameters', 'image_path') # image_path
@@ -65,7 +65,7 @@ def readData(path):
                 img = image.load_img(img_path, target_size=(size, size)) # 讀取照片
                 img = image.array_to_img(img) # 將照片轉為array
                 img = np.expand_dims(img, axis=0) # 在0的位置新增資料
-                lab = folder.replace(path + '\\',"") # 讀取標記資料
+                lab = folder.split('/')[-1] # 讀取標記資料
 
                 imgs.append(img) # 寫入img array
                 labs.append(lab) # 寫入label
