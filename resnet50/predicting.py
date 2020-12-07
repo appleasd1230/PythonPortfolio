@@ -16,10 +16,10 @@ import time as t
 """config"""
 config = configparser.ConfigParser()
 config.read('Config.ini', encoding = 'utf_8_sig')
-dropout = int(config.get('Parameters', 'dropout')) # dropout
+dropout = float(config.get('Parameters', 'dropout')) # dropout
 batch_size = int(config.get('Parameters', 'batch_size')) # batch_size
 epochs = int(config.get('Parameters', 'epochs')) # epochs
-lr = int(config.get('Parameters', 'lr')) # learning_rate
+lr = float(config.get('Parameters', 'lr')) # learning_rate
 size = int(config.get('Parameters', 'size')) # size
 test_path = config.get('Parameters', 'test_path') # label_path
 image_path = config.get('Parameters', 'image_path') # image_path
@@ -41,22 +41,26 @@ def exception_to_string(excp):
 
 """讀取Model"""
 def load_model():
-	with open('weights_data/ResNet.h5', 'r') as f:
+	with open('weights_data/ResNet.yml', 'r') as f:
 		yaml_string = yaml.load(f)
 	model = model_from_yaml(yaml_string)
-	model.load_weights('weights_data/cnn.h5')
+	model.load_weights('weights_data/ResNet.h5')
 	model.compile(optimizer='adam',loss='categorical_crossentropy',metrics=['accuracy'])
 	return model    
 
 """預測結果"""
 def predict():
     model = load_model() # 讀取參數
-    img = image.load_img(test_path, target_size=(size, size)) # 讀取照片
-    img = image.img_to_array(img)
-    img = np.expand_dims(img, axis=0)
-    img = preprocess_input(img)
-    preds = model.predict_classes(img)
-    print(preds[0])
+
+    for (folder, dirnames, filenames) in os.walk(test_path):
+        for filename in filenames:
+            img_path = folder + '\\' + filename  
+            img = image.load_img(img_path, target_size=(size, size)) # 讀取照片
+            img = image.img_to_array(img)
+            img = np.expand_dims(img, axis=0)
+            img = preprocess_input(img)
+            preds = np.argmax(model.predict(img), axis=-1)
+            print('結果 : ' + str(preds[0]) + ', 正確答案 : ' + filename.split('.')[0])
 
 if __name__ == '__main__':
     predict()
