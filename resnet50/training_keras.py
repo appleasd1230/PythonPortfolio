@@ -61,12 +61,14 @@ def readData(path):
     for (folder, dirnames, filenames) in os.walk(path):
         for filename in filenames:
             if filename.endswith('.jpg') or filename.endswith('.jpeg') or filename.endswith('.png'):
-                img_path = folder + '/' + filename
+                img_path = folder + '\\' + filename
                 img = image.load_img(img_path, target_size=(size, size)) # 讀取照片
-                img = image.array_to_img(img) # 將照片轉為array
-                img = np.expand_dims(img, axis=0) # 在0的位置新增資料
-                lab = folder.split('/')[-1] # 讀取標記資料
+                img = image.img_to_array(img) # 將照片轉為array
+                # img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
 
+                img = np.expand_dims(img, axis=0) # 在0的位置新增資料
+
+                lab = folder.split('\\')[-1] # 讀取標記資料
                 imgs.append(img) # 寫入img array
                 labs.append(lab) # 寫入label
 
@@ -112,7 +114,7 @@ def train():
 
     train_history = model.fit(train_x, train_y, epochs=epochs, batch_size=batch_size, verbose=2, validation_data=(test_x, test_y))
 
-    show_train_history(train_history, 'Accuracy', 'acc', 'val_acc')
+    show_train_history(train_history, 'Accuracy', 'accuracy', 'val_accuracy')
     show_train_history(train_history, 'loss', 'loss', 'val_loss')
 
     score = model.evaluate(test_x, test_y,batch_size=batch_size)
